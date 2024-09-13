@@ -14,7 +14,7 @@ function calculateLoan() {
   const monthlyPayment = (amount * rate * Math.pow(1 + rate, totalPayments)) / (Math.pow(1 + rate, totalPayments) - 1);
 
   if (isFinite(monthlyPayment)) {
-      document.getElementById('result').innerText = `Monthly Payment: $${monthlyPayment.toFixed(2)}`;
+      document.getElementById('result').innerText = `Monthly Payment: ₹${monthlyPayment.toFixed(2)}`;
   } else {
       document.getElementById('result').innerText = "Please enter positive numbers.";
   }
